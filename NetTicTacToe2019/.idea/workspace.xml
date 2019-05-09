@@ -19,22 +19,12 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/NetTicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="1206" column="31" selection-start-line="1206" selection-start-column="26" selection-end-line="1206" selection-end-column="31" />
+            <state relative-caret-position="11424">
+              <caret line="681" column="24" selection-start-line="681" selection-start-column="24" selection-end-line="681" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2985#2986#0" expanded="true" />
-                <element signature="e#3031#3032#0" expanded="true" />
-                <element signature="e#20035#20036#0" expanded="true" />
-                <element signature="e#20089#20090#0" expanded="true" />
-                <element signature="e#20548#20549#0" expanded="true" />
-                <element signature="e#20602#20603#0" expanded="true" />
-                <element signature="e#28838#28839#0" expanded="true" />
-                <element signature="e#28908#28909#0" expanded="true" />
-                <element signature="e#31817#31818#0" expanded="true" />
-                <element signature="e#31887#31888#0" expanded="true" />
-                <element signature="e#34548#34549#0" expanded="true" />
-                <element signature="e#34618#34619#0" expanded="true" />
+                <element signature="e#23576#25801#0" expanded="true" />
+                <element signature="e#25800#25801#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -75,12 +65,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>gp</find>
-      <find>dispo</find>
-      <find>Ga</find>
-      <find>boar</find>
-      <find>run</find>
-      <find>mouse</find>
       <find>check</find>
       <find>horWi</find>
       <find>Mouse</find>
@@ -90,7 +74,6 @@
       <find>Вы ходите</find>
       <find>isDr</find>
       <find>type</find>
-      <find>krestikLastClick</find>
       <find>serverCanGo</find>
       <find>serverDataReady</find>
       <find>elder</find>
@@ -105,6 +88,13 @@
       <find>sendBtn</find>
       <find>ipButton</find>
       <find>Frame</find>
+      <find>drawKrestik</find>
+      <find>trans</find>
+      <find>clientDataReady</find>
+      <find>krestikLastClick</find>
+      <find>t</find>
+      <find>mouse</find>
+      <find>clientCanGo</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -120,16 +110,14 @@
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
     <option name="y" value="-10" />
-    <option name="width" value="1939" />
-    <option name="height" value="1059" />
+    <option name="width" value="1940" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -152,11 +140,13 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557422251909" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1557425528068" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
   </component>
@@ -223,7 +213,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23557048" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24228188" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -232,7 +222,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3297587" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.40482575" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.14879356" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.29490617" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -272,22 +262,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/NetTicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="1206" column="31" selection-start-line="1206" selection-start-column="26" selection-end-line="1206" selection-end-column="31" />
+        <state relative-caret-position="11424">
+          <caret line="681" column="24" selection-start-line="681" selection-start-column="24" selection-end-line="681" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2985#2986#0" expanded="true" />
-            <element signature="e#3031#3032#0" expanded="true" />
-            <element signature="e#20035#20036#0" expanded="true" />
-            <element signature="e#20089#20090#0" expanded="true" />
-            <element signature="e#20548#20549#0" expanded="true" />
-            <element signature="e#20602#20603#0" expanded="true" />
-            <element signature="e#28838#28839#0" expanded="true" />
-            <element signature="e#28908#28909#0" expanded="true" />
-            <element signature="e#31817#31818#0" expanded="true" />
-            <element signature="e#31887#31888#0" expanded="true" />
-            <element signature="e#34548#34549#0" expanded="true" />
-            <element signature="e#34618#34619#0" expanded="true" />
+            <element signature="e#23576#25801#0" expanded="true" />
+            <element signature="e#25800#25801#0" expanded="true" />
           </folding>
         </state>
       </provider>

@@ -20,6 +20,8 @@ public class NetTicTacToe extends JFrame implements Runnable {
     static int serverScore=0;
     static int clientScore=0;
 
+    static boolean clientLastMove;
+
     public static InetAddress ia = null;
 
     public static boolean chatServ = false;
@@ -579,6 +581,8 @@ public class NetTicTacToe extends JFrame implements Runnable {
 
                             clientDataReady = false;
 
+                            clientLastMove = true;
+
                             System.out.println("Client: data transported!");
                             break;
 
@@ -598,6 +602,7 @@ public class NetTicTacToe extends JFrame implements Runnable {
 
 
                             System.out.println("Client called from server...");
+                            clientLastMove = false;
 
 
                             String[] words = str.split(" ");
@@ -659,6 +664,8 @@ public class NetTicTacToe extends JFrame implements Runnable {
 
                         System.out.println("Client say: " + inputLine);
 
+                        clientLastMove = true;
+
                         String[] coords = inputLine.split(" ");
 
                         int vStep = Integer.parseInt(coords[0]);
@@ -684,6 +691,8 @@ public class NetTicTacToe extends JFrame implements Runnable {
                         if( serverDataReady ){
 
                             System.out.println("Server: starting transmission...");
+
+                            clientLastMove = false;
                             outputLine = String.valueOf(verStep);
 
                             outputLine = outputLine.concat(" ");
@@ -855,10 +864,9 @@ public class NetTicTacToe extends JFrame implements Runnable {
         public static class GamePanel extends JPanel {
 
            public boolean gameOverHappened = false;
-           public boolean krestikLastClick;
 
             public GamePanel() {
-                GameFrame.gamePanel = this;////////////////////////потом удалить
+                GameFrame.gamePanel = this;
                 this.addMouseListener(new MouseAdapter() {
 
                     @Override
@@ -877,11 +885,10 @@ public class NetTicTacToe extends JFrame implements Runnable {
                         if (!isServer) {
 
                             type = 1;//клиент
-                            krestikLastClick = true;
+
                         } else {
 
                             type = 2;//сервер
-                            krestikLastClick = false;
                         }
 
 
@@ -1194,7 +1201,7 @@ public class NetTicTacToe extends JFrame implements Runnable {
                             repaint();
                             repeatFrame.hide();
 
-                            if ( ( (isServer/*нолик*/) && (krestikLastClick) ) || ( (!isServer/*крестик*/) && (!krestikLastClick) ) ) {JOptionPane.showMessageDialog(null, "Вы ходите первым","Начинайте!", JOptionPane.INFORMATION_MESSAGE);}
+                            if ( ( (isServer/*нолик*/) && (clientLastMove) ) || ( (!isServer/*крестик*/) && (!clientLastMove) ) ) {JOptionPane.showMessageDialog(null, "Вы ходите первым","Начинайте!", JOptionPane.INFORMATION_MESSAGE);}
                             else {JOptionPane.showMessageDialog(null, "Вы ходите вторым","Ожидайте!", JOptionPane.INFORMATION_MESSAGE);}
 
                         }
