@@ -19,12 +19,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/NetTicTacToe.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="11424">
-              <caret line="681" column="24" selection-start-line="681" selection-start-column="24" selection-end-line="681" selection-end-column="24" />
+            <state relative-caret-position="304">
+              <caret line="647" column="21" lean-forward="true" selection-start-line="647" selection-start-column="21" selection-end-line="647" selection-end-column="21" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#23576#25801#0" expanded="true" />
-                <element signature="e#25800#25801#0" expanded="true" />
+                <element signature="e#2954#2955#0" expanded="true" />
+                <element signature="e#3000#3001#0" expanded="true" />
+                <element signature="e#22426#22427#0" expanded="true" />
+                <element signature="e#22480#22481#0" expanded="true" />
+                <element signature="e#22939#22940#0" expanded="true" />
+                <element signature="e#22993#22994#0" expanded="true" />
+                <element signature="e#34858#34859#0" expanded="true" />
+                <element signature="e#34928#34929#0" expanded="true" />
+                <element signature="e#37589#37590#0" expanded="true" />
+                <element signature="e#37659#37660#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -65,9 +73,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>check</find>
-      <find>horWi</find>
-      <find>Mouse</find>
       <find>isKrestikWin</find>
       <find>gameOverHappened</find>
       <find>Вы ход</find>
@@ -78,7 +83,6 @@
       <find>serverDataReady</find>
       <find>elder</find>
       <find>serverScor</find>
-      <find>serverScore</find>
       <find>размет</find>
       <find>scoreAr</find>
       <find>Inp</find>
@@ -95,6 +99,10 @@
       <find>t</find>
       <find>mouse</find>
       <find>clientCanGo</find>
+      <find>yesBt</find>
+      <find>serverScore</find>
+      <find>clientSc</find>
+      <find>disc</find>
     </findStrings>
   </component>
   <component name="IdeDocumentHistory">
@@ -118,6 +126,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -141,7 +150,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -213,7 +221,7 @@
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24228188" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24563758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -262,12 +270,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/NetTicTacToe.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="11424">
-          <caret line="681" column="24" selection-start-line="681" selection-start-column="24" selection-end-line="681" selection-end-column="24" />
+        <state relative-caret-position="304">
+          <caret line="647" column="21" lean-forward="true" selection-start-line="647" selection-start-column="21" selection-end-line="647" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#23576#25801#0" expanded="true" />
-            <element signature="e#25800#25801#0" expanded="true" />
+            <element signature="e#2954#2955#0" expanded="true" />
+            <element signature="e#3000#3001#0" expanded="true" />
+            <element signature="e#22426#22427#0" expanded="true" />
+            <element signature="e#22480#22481#0" expanded="true" />
+            <element signature="e#22939#22940#0" expanded="true" />
+            <element signature="e#22993#22994#0" expanded="true" />
+            <element signature="e#34858#34859#0" expanded="true" />
+            <element signature="e#34928#34929#0" expanded="true" />
+            <element signature="e#37589#37590#0" expanded="true" />
+            <element signature="e#37659#37660#0" expanded="true" />
           </folding>
         </state>
       </provider>

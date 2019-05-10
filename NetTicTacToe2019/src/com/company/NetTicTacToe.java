@@ -623,13 +623,29 @@ public class NetTicTacToe extends JFrame implements Runnable {
                             break;
                         }
                     }catch (SocketException sex){
-                        JOptionPane.showMessageDialog(null, "Server disconnected...","Очень жаль!", JOptionPane.INFORMATION_MESSAGE);
+                        if (serverScore > clientScore) {
+                            JOptionPane.showMessageDialog(null, "Server disconnected...Со счётом " + serverScore + " : " + clientScore + " победил сервер.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                        }
+                        else if (clientScore > serverScore) {
+                            JOptionPane.showMessageDialog(null, "Server disconnected...Со счётом " + serverScore + " : " + clientScore + " победил клиент.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                        }
+                        else {
+                            JOptionPane.showMessageDialog(null, "Server disconnected...Ничья со счётом " + serverScore + " : " + clientScore + ". Победила дружба.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                        }
                         System.exit(1);
                     }
                 }
                 catch (Exception ex) {
                     Logger.getLogger(NetTicTacToe.class.getName()).log(Level.SEVERE, null, ex);
-                    JOptionPane.showMessageDialog(null, "Server disconnected...","Очень жаль!", JOptionPane.INFORMATION_MESSAGE);
+                    if (serverScore > clientScore) {
+                        JOptionPane.showMessageDialog(null, "Server disconnected...Со счётом " + serverScore + " : " + clientScore + " победил сервер.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                    }
+                    else if (clientScore > serverScore) {
+                        JOptionPane.showMessageDialog(null, "Server disconnected...Со счётом " + serverScore + " : " + clientScore + " победил клиент.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                    }
+                    else {
+                        JOptionPane.showMessageDialog(null, "Server disconnected...Ничья со счётом " + serverScore + " : " + clientScore + ". Победила дружба.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                    }
                     System.exit(1);
                 }
 
@@ -716,7 +732,15 @@ public class NetTicTacToe extends JFrame implements Runnable {
             } catch (InterruptedException ex) {
                 Logger.getLogger(NetTicTacToe.class.getName()).log(Level.SEVERE, null, ex);
             } catch (IOException ioe) {
-                JOptionPane.showMessageDialog(null, "Client disconnected...","Очень жаль!", JOptionPane.INFORMATION_MESSAGE);
+                if (serverScore > clientScore) {
+                    JOptionPane.showMessageDialog(null, "Client disconnected...Со счётом " + serverScore + " : " + clientScore + " победил сервер.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                }
+                else if (clientScore > serverScore) {
+                    JOptionPane.showMessageDialog(null, "Client disconnected...Со счётом " + serverScore + " : " + clientScore + " победил клиент.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                }
+                else {
+                    JOptionPane.showMessageDialog(null, "Client disconnected...Ничья со счётом " + serverScore + " : " + clientScore + ". Победила дружба.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                }
                 System.exit(1);
             }
 
@@ -1041,6 +1065,15 @@ public class NetTicTacToe extends JFrame implements Runnable {
                     noBtn.addActionListener(new ActionListener() {
                         @Override
                         public void actionPerformed(ActionEvent e) {
+                            if (serverScore > clientScore) {
+                                JOptionPane.showMessageDialog(null, "Со счётом " + serverScore + " : " + clientScore + " победил сервер.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                            }
+                            else if (clientScore > serverScore) {
+                                JOptionPane.showMessageDialog(null, "Со счётом " + serverScore + " : " + clientScore + " победил клиент.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                            }
+                            else {
+                                JOptionPane.showMessageDialog(null, " Ничья со счётом " + serverScore + " : " + clientScore + ". Победила дружба.", "Подведём итог!", JOptionPane.INFORMATION_MESSAGE);
+                            }
                             System.exit(0);
                         }
                     });
